@@ -31,7 +31,7 @@ heroSection.appendChild(newHeroSection);
 
 
 
-// ---------------- this services ------------------ // 
+// ---------------- this is services ------------------ // 
 
 
 let servicesSection = document.querySelector(".services")
@@ -58,4 +58,27 @@ services.forEach(services => {
 
     servicesSection.append(newService);
  });
+
+// ---------------- this is facilities ------------------ // 
+
+
+let facilitySection = document.querySelector(".facilities");
+
+let facilityHeadline = document.createElement("h2")
+facilityHeadline.textContent = facilities.headline;
+facilitySection.append(facilityHeadline) 
+
+facilities.options.forEach(option => {
+    let newFacility = document.createElement("section"); 
+    newFacility.classList.add("facilites"); 
+    newFacility.innerHTML = `
+        <img src="${option.icon}">
+        <h3>${option.headline}</h3>
+        <p>${option.text}</p>  
+        `; 
+
+    facilitySection.append(newFacility); 
+});
+
+
 
