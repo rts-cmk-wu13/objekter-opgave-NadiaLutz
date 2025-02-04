@@ -85,32 +85,30 @@ facilities.options.forEach(option => {
 // ---------------- this is sites ------------------ // 
 
 
-let sitesSection = document.querySelector(".sites")
+let sitesSection = document.querySelector(".sites");
 
-let sitesHeadline = document.createElement("h2")
+let sitesHeadline = document.createElement("h2");
 sitesHeadline.textContent = sites.headline;
-sitesSection.append(sitesHeadline)
+sitesSection.append(sitesHeadline);
 
-let sitesText = document.createElement("p")
+let sitesText = document.createElement("p");
 sitesText.textContent = sites.text;
-sitesSection.append(sitesText)
+sitesSection.append(sitesText);
 
-let sitesImage = document.createElement("img")
-sitesImage.src = sites.image;
-sitesSection.append(sitesImage)
 
-let sitesLink = document.createElement("a")
-sitesLink.textContent = sites.btnicon
-sitesSection.apppend(sitesLink)
+let sitesLink = document.createElement("a");
+sitesLink.textContent = 
+sitesLink.href = sites.btnicon; 
+sitesSection.append(sitesLink);
 
-sites.options.forEach(option => {
-    let newSitesocument.createElement("section");
-    newFacility.classList.add("facilites"); 
-    newFacility.innerHTML = `
-        <img src="${option.icon}">
-        <h3>${option.headline}</h3>
-        <p>${option.text}</p>  
-        `; 
+sites.places.forEach(place => {
+    let newSites = document.createElement("section");
+    newSites.classList.add("site"); 
+    newSites.innerHTML = `
+        <img src="${place.img}">
+        <p>${place.city}</p>
+        <h2>${place.name}</h2>
+    `;
 
-    facilitySection.append(newFacility); 
+    sitesSection.append(newSites);
 });
