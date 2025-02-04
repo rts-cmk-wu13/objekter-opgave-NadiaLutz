@@ -82,3 +82,35 @@ facilities.options.forEach(option => {
 
 
 
+// ---------------- this is sites ------------------ // 
+
+
+let sitesSection = document.querySelector(".sites")
+
+let sitesHeadline = document.createElement("h2")
+sitesHeadline.textContent = sites.headline;
+sitesSection.append(sitesHeadline)
+
+let sitesText = document.createElement("p")
+sitesText.textContent = sites.text;
+sitesSection.append(sitesText)
+
+let sitesImage = document.createElement("img")
+sitesImage.src = sites.image;
+sitesSection.append(sitesImage)
+
+let sitesLink = document.createElement("a")
+sitesLink.textContent = sites.btnicon
+sitesSection.apppend(sitesLink)
+
+sites.options.forEach(option => {
+    let newSitesocument.createElement("section");
+    newFacility.classList.add("facilites"); 
+    newFacility.innerHTML = `
+        <img src="${option.icon}">
+        <h3>${option.headline}</h3>
+        <p>${option.text}</p>  
+        `; 
+
+    facilitySection.append(newFacility); 
+});
