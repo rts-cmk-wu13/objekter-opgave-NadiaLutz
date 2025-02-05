@@ -14,9 +14,13 @@ html {
     scroll-behavior: smooth;
 }
 
+h1, h2, h3 {
+    font-family: "Merriweather";
+}
+
 img {
     width: 100%;
-    height: 100%;
+    height: auto;
     font-style: italic;
     color: grey;
 }
@@ -28,4 +32,9 @@ a, button, li {
 @font-face {
     font-family: "Monserrat";
     src: url(/font/Montserrat-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: "Merriweather";
+    src: url(/font/Merriweather-Bold.ttf);
 }

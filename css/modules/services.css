@@ -1,0 +1,15 @@
+
+.services {
+    display: grid;
+    grid-column: content;
+    grid-template-columns: subgrid;
+    gap: 2rem;
+}
+
+.services p, .services h2, .services h3 {
+    width: 24rem;
+}
+
+.services img {
+    width: 15.5rem;
+}

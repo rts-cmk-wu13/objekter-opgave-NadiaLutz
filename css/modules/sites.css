@@ -1,0 +1,7 @@
+
+.sites {
+    display: grid;
+    grid-column: content;
+    grid-template-columns: subgrid;
+    gap: 2rem;
+}
