@@ -1,7 +1,10 @@
-
 .sites {
     display: grid;
-    grid-column: content;
-    grid-template-columns: subgrid;
+    /* Removed grid-column as it may not be needed */
+    grid-template-columns: repeat(3, 1fr); /* Changed to define three equal columns */
     gap: 2rem;
+}
+
+.sites img {
+    width: 14.375rem;
 }

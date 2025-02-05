@@ -1,21 +1,20 @@
-
 .wrapper {
-    display: grid;
-    grid-template-columns:[full-start]15rem
-    [content-start]repeat(6, 1fr)[content-end]
-    15rem[full end];
+  display: grid;
+  grid-template-columns: [full-start] 15rem [content-start] 1fr 1fr 1fr [content-end] 15rem [full-end];
 }
- 
 
-header, main, footer {
-    grid-column: full;
-    display: grid;
-    grid-template-columns: subgrid;
+header,
+main,
+footer {
+  grid-column: content;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
 }
+
 header > *,
 main > *,
 footer > * {
-    grid-column: content;
-    display: grid;
-    grid-template-columns: subgrid;
+  grid-column: content;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
 }
