@@ -1,0 +1,44 @@
+:root {
+    --primary-orange:rgba(247, 128, 101, 1);
+
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: "Montserrat", arial, sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: rgb(250, 250, 250);
+}
+
+h1, h2, h3 {
+    font-family: "Merriweather";
+}
+
+img {
+    width: 100%;
+    height: auto;
+    font-style: italic;
+    color: grey;
+}
+
+a, button, li {
+    cursor: pointer;
+}
+
+@font-face {
+    font-family: "Monserrat";
+    src: url(/font/Montserrat-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: "Merriweather";
+    src: url(/font/Merriweather-Bold.ttf);
+}

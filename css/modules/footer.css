@@ -1,0 +1,15 @@
+
+footer {
+   display: flex;
+   gap: 4rem;
+}
+
+.footer-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer ul {
+    display: flex;
+    flex-direction: column;
+}

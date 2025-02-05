@@ -1,0 +1,30 @@
+
+.services {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-block: 5rem;
+}
+
+.services img {
+    width: 15.5rem;
+}
+
+.service {
+    width: 24.125rem;
+}
+
+.service h3 {
+    font-size: 1.5rem;
+    margin-block: 1rem;
+}
+
+.service p {
+    color: grey;
+    margin-block-end: 2rem;
+}
+
+.service a {
+    color: var(--primary-orange);
+    font-weight: bolder;
+}

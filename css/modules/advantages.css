@@ -1,0 +1,27 @@
+.advantages {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 2rem;
+    margin-block: 5rem;
+}
+
+.advantages > * {
+    display: flex;
+    flex-direction: column;
+}
+
+.advantages h2 {
+    font-size: 1.375rem;
+}
+
+.advantages p {
+    width: 20rem;
+    color: grey;
+    line-height: 1.6;
+    font-weight: medium;
+    font-size: 0.875rem;
+}
+
+.advantages img {
+    width: 8%;
+}

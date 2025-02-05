@@ -3,7 +3,8 @@ let hero = {
     image: "https://dazzling-squirrel-77a63d.netlify.app/imgs/hero.png",
     headline: "Find out how we can save your time in Backpacking in Europe",
     copy: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ac amet id eget scelerisque amet etiam in sit commodo. Pretium ut duis orci pulvinar pretium id consectetur.",
-    icon: "https://dazzling-squirrel-77a63d.netlify.app/imgs/icons/Globe.png"
+    icon: "https://dazzling-squirrel-77a63d.netlify.app/imgs/icons/Globe.png",
+    button: "Explore"
 }
 
 
@@ -95,4 +96,21 @@ let advantages = [
     },
 ]
 
-// Opret dit dataobjekt til footerens indhold herunder
+let footer = {
+    text: "Easy Camper",
+    headline: "When Passion Meets Comfort",
+    info: [
+        {
+            headline: "Discover the Network",
+            li: ["Where to shop", "Tour Guided", "Our Tours", "About Us"]
+        },
+        {
+            headline: "Become a Manager",
+            li: ["Join your Pairing", "Offer your Service", "Are you a guide?"]
+        },
+        {
+            headline: "Assistance",
+            li: ["Support Center", "FAQs", "Cancellation Options", "Reliability and Security"]
+        },
+    ]
+};
