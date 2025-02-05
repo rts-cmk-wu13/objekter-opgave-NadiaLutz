@@ -1,10 +1,65 @@
 .sites {
     display: grid;
-    /* Removed grid-column as it may not be needed */
-    grid-template-columns: repeat(3, 1fr); /* Changed to define three equal columns */
+    grid-template-columns: repeat(4, 1fr); 
     gap: 2rem;
+    margin-block: 5rem;
+}
+
+.sites h2, .sites p {
+    margin-block: 0.5rem;
+ }
+
+.sites div {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;   
+}
+
+.sites div h2 {
+    font-size: 2.25rem;
+}
+
+.sites div p {
+    font-size: 1.125rem;
+    color: grey;
+}
+
+.sites div button p {
+    color: white;
 }
 
 .sites img {
     width: 14.375rem;
+    height: 26.125rem;
+    object-fit: cover;
+    margin-block-end: 2rem;
+}
+
+.sitesbtn {
+    background: var(--primary-orange);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 15.625rem;
+    height: 4rem;
+    border: none;
+    gap: 0.25rem;
+}
+
+.sitesbtn p {
+    font-size: 1.125rem;
+    font-weight: bolder;
+}
+
+.sitesbtn img {
+    width: 12%;
+    object-fit: none;
+    margin: 0;
+} 
+
+.sites a {
+    color: var(--primary-orange);
+    text-decoration: none;
+    font-size: 1.125rem;
 }

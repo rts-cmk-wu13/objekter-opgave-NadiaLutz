@@ -21,22 +21,17 @@ heroCopy.textContent = hero.copy;
 // let heroIcon = document.createElement("img");
 // heroIcon.src = hero.icon;
 
-
 // heroDiv.appendChild(heroIcon);
 heroDiv.appendChild(heroHeadline);
 heroDiv.appendChild(heroCopy);
 heroDiv.appendChild(heroBtn)
 newHeroSection.appendChild(heroDiv);
 
-
 let heroImage = document.createElement("img");
 heroImage.src = hero.image;
 newHeroSection.appendChild(heroImage);
 
-
 heroSection.appendChild(newHeroSection);
-
-
 
 // ---------------- this is services ------------------ // 
 
@@ -48,7 +43,6 @@ services.forEach(services => {
 
   let newIllustration = document.createElement("img");
   newIllustration.src = services.illustration;
-  newIllustration.classList.add("service__img")
   newService.append(newIllustration);
 
   let serviceHeadline = document.createElement("h3");
@@ -68,27 +62,36 @@ services.forEach(services => {
 
 // ---------------- this is facilities ------------------ // 
 
+let facilityDiv = document.createElement("div");
 let facilitySection = document.querySelector(".facilities");
+facilitySection.append(facilityDiv); 
 
 let facilityHeadline = document.createElement("h2");
 facilityHeadline.textContent = facilities.headline;
-facilitySection.append(facilityHeadline);
+facilityDiv.append(facilityHeadline);
+
+let facilitiesContainer = document.createElement("div"); 
 
 facilities.options.forEach(option => {
     let newFacility = document.createElement("section"); 
-    newFacility.classList.add("facilites"); 
+    newFacility.classList.add("facilities"); 
+
     newFacility.innerHTML = `
         <img src="${option.icon}">
         <h3>${option.headline}</h3>
         <p>${option.text}</p>  
     `; 
 
-    facilitySection.append(newFacility); 
-});
+    facilitiesContainer.append(newFacility); 
+}); 
+
+facilityDiv.append(facilitiesContainer); 
 
 // ---------------- this is sites ------------------ // 
 
 let sitesSection = document.querySelector(".sites");
+let newSitesSection = document.createElement("section");
+let sitesDiv = document.createElement("div");
 
 let sitesHeadline = document.createElement("h2");
 sitesHeadline.textContent = sites.headline;
@@ -97,20 +100,25 @@ let sitesText = document.createElement("p");
 sitesText.textContent = sites.text;
 
 let sitesLink = document.createElement("button");
+sitesLink.classList.add("sitesbtn");
 sitesLink.innerHTML = `
 <img src="${sites.btnicon}">
 <p>Start</p>
 `;
 
-sitesSection.append(sitesHeadline, sitesText, sitesLink);
+sitesDiv.appendChild(sitesHeadline);
+sitesDiv.appendChild(sitesText);
+sitesDiv.appendChild(sitesLink);
+
+sitesSection.appendChild(sitesDiv);
 
 sites.places.forEach(place => {
     let newSites = document.createElement("section");
     newSites.classList.add("site"); 
     newSites.innerHTML = `
         <img src="${place.img}">
-        <p>${place.city}</p>
         <h2>${place.name}</h2>
+        <p>${place.city}</p>
         <a href="#">View the site</a>
     `;
 
@@ -133,7 +141,7 @@ advantages.forEach(advantage => {
         <p>${advantage.text}</p> 
     `;
 
-    advantagesSection.append(newAdvantages, advantagesHeadline);
+    advantagesSection.append(newAdvantages);
 });
 
 // ---------------- this is footer ------------------ // 
@@ -165,5 +173,4 @@ footer.info.forEach(foot => {
     footerSection.append(newFooter, footerHeadline, ul); 
 });
     
-    footerSection.append(newFooter, footerHeadline, ul); 
-
+footerSection.append(newFooter, footerHeadline, ul);

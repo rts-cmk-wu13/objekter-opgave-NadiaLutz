@@ -1,0 +1,8 @@
+
+footer {
+   display: flex;
+}
+
+footer ul {
+    flex-direction: column;
+}
