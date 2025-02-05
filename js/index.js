@@ -172,5 +172,3 @@ footer.info.forEach(foot => {
     
     footerSection.append(newFooter, footerHeadline, ul); 
 });
-    
-footerSection.append(newFooter, footerHeadline, ul);
